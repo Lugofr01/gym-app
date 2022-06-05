@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body{
+            background-image: url("https://cdn2.careeraddict.com/uploads/article/59265/illustration-people-working-out-gym.png");
+            font-weight:bolder ;
+        }
+
+.first{
+
+    margin-left: 10cm;
+
+}
+div.fixed {
+  position: absolute;
+
+  bottom: 10px;
+  border: 3px solid #8AC007;
+  margin: auto;
+  width: 95%;
+  border: 3px solid green;
+  padding: 10px;
+  margin-right: 5cm;
+  margin-bottom: 5.5cm;
+} 
+
+div.buyer{
+position: absolute;
+
+bottom: 10px;
+border: 3px solid #8AC007;
+margin: auto;
+width: 95%;
+border: 3px solid green;
+padding: 10px;
+margin-right: 5cm;
+margin-bottom: 0.5cm;
+
+}
+
+#tot_amount{
+
+    width: 50px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.position-static p-3 border{
+    margin-top: 2cm;
+}
+
+#checkin 
+
+
+
+.credit{
+    margin-bottom: 3.5cm;
+}
+</style>
+</head>
+<body>
+<form action = "{{ url_for('info') }}" method="POST">
+
+    
+                        
+                            <h2 class="text-center">OPEN HOURS</h2>
+
+             
+                        <div style="position:absolute; left: 590px; top:150px;" class="CHECK IN">
+                                <table id="checkin"> 
+                            
+                                        <tr tr style="background-color:#ebe7c9">
+                                            <th>DAY</th>
+                                            <th>TIME</th>
+                                            
+                                        </tr>
+                                    
+                                <tr style="background-color:#ebe7c9">
+                                    <td>Monday</td>
+
+
+                                    <td>09:00 am - 10:00 pm</td>
+
+
+                                   
+                                </tr>
+                                <tr style="background-color:#ebe7c9">
+                                    <td>Tuesday</td>
+
+
+                                    <td>09:00 am - 10:00 pm</td>
+
+
+                                   
+                                </tr>
+                                <tr style="background-color:#ebe7c9">
+                                    <td>Wednesday</td>
+
+
+                                        <td>09:00 am - 10:00 pm</td>
+
+                                   
+                                </tr>
+                                <tr style="background-color:#ebe7c9">
+                                    <td>Thursday</td>
+
+
+                                        <td>09:00 am - 10:00 pm</td>
+
+                                   
+                                </tr>
+                                <tr style="background-color:#ebe7c9">
+                                    <td> 
+                                       Friday </td>
+
+
+                                        <td>09:00 am - 10:00 pm</td>
+
+                                   
+                                </tr>
+                                <tr style="background-color:#ebe7c9">
+                                    <td>Saturday</td>
+
+
+                                    <td>09:00 am - 10:00 pm</td>
+
+                                   
+                                </tr>
+                                <tr style="background-color:#ebe7c9">
+                                    <td> Sunday</td>
+
+
+                                    <td>09:00 am - 10:00 pm</td>
+
+                                </tr>
+
+
+
+                                </table>
+                        </div>
+
+
+                        <!-- <div style="position:absolute; left: 370px; top:349px;">
+                            <input type="submit" value="Submit" class="btn btn-secondary btn-lg btn-block" width="10cm">
+
+                        </div> -->
+
+                        
+
+
+                      
+</form>
+
+
+
+<form action = "{{ url_for('info2') }}" method="POST">
+
+    
+                        
+    
+
+<div style="position:absolute; left: 100px; top:700px; color: rgb(10, 10, 10); font-size: x-large;" class="CHECK IN">
+    <label for="email">For job enquires, Please Enter your email and we will contact you:</label>
+<input type="email" id="email" name="temail">
+
+
+                            <input type="submit" value="Submit" class="btn btn-secondary btn-lg " width="10cm">
+
+                        </div>
+
+</form>
+
+
+
+                            
+
+
+ 
+
+
+</body>
+<script>
+    
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
+
+
+
+
+
+<!-- Sources: -->
+
+<!-- https://www.studentstutorial.com/javascript/auto-calculate-price-javascript -->

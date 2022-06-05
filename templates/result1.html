@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+</head>
+<style>
+    body{
+       font-size: x-large;
+
+       font-weight: bold;
+
+       color: rgb(8, 8, 8);
+          
+            background-image: url("https://cdn2.careeraddict.com/uploads/article/59265/illustration-people-working-out-gym.png")
+        }
+
+      
+</style>
+   <body>
+
+
+   
+      <table  class = "mui-table mui-table--bordered">
+         <thead>
+            <!-- <th>Member</th> -->
+            <th>Date</th>
+            <th>Workout</th>
+            <th>Equipment Type</th>
+            <th>Time Out</th>
+            <!-- <th>Instructor</th> -->
+           
+         </thead>
+         
+         {% for rows in rowData %}
+            <tr>
+               <!-- <td>{{rows["person1"]}}</td> -->
+               <td>{{rows["date1"]}}</td>
+               <td>{{rows['workout1']}}</td>
+               <td>{{rows['workouttype1']}}</td>
+               <td>{{rows['time1']}}</td>
+               <!-- <td>{{rows['instructor1']}}</td> -->
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    body{
+            background-image: url("https://cdn2.careeraddict.com/uploads/article/59265/illustration-people-working-out-gym.png")
+        }
+
+.first{
+
+    margin-left: 10cm;
+
+}
+div.fixed {
+  position: absolute;
+
+  bottom: 10px;
+  border: 3px solid #8AC007;
+  margin: auto;
+  width: 95%;
+  border: 3px solid green;
+  padding: 10px;
+  margin-right: 5cm;
+  margin-bottom: 5.5cm;
+} 
+
+div.buyer{
+position: absolute;
+
+bottom: 10px;
+border: 3px solid #8AC007;
+margin: auto;
+width: 95%;
+border: 3px solid green;
+padding: 10px;
+margin-right: 5cm;
+margin-bottom: 0.5cm;
+
+}
+
+#tot_amount{
+
+    width: 50px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.position-static p-3 border{
+    margin-top: 2cm;
+}
+
+#checkin 
+
+
+
+.credit{
+    margin-bottom: 3.5cm;
+}
+</style>
+</head>
+<body>
+<form action = "{{ url_for('info1') }}" method="POST">
+
+    <div class="float-right position-static p-3 border ">  
+        <input type="date" id="start" name="date-start"
+       >
+
+    </div>
+                        <div id="name" class="position-static p-3 border">
+
+
+                           
+                                <label for="name" > Name:</label>
+                                <input type="text" id="fname" name="outname'"><br><br>
+
+                        
+                        
+                    
+                            
+                        </div>
+<div>  
+                            <h2 class="text-center">GYM CHECK OUT</h2>
+
+             
+                        <div style="position:absolute; left: 370px; top:150px;" class="CHECK IN">
+                                <table id="checkin"> 
+                            
+                                        <tr tr style="background-color:#ebe7c9">
+                                            <th>Equipment Sanity</th>
+                                            <th>Workout type</th>
+                                            <th> Finish time</th>
+                                            <th> Review</th>
+                                        </tr>
+                                    
+                                <tr style="background-color:#ebe7c9">
+                                    <td> 
+                                        <select name="Assesment" id="selwork">
+                                            <!-- TODO: Populate categories -->
+                                            <option value="The Equipments were Clean and arranged">The Equipments were Clean and arranged</option>
+                                            <option value="The Equipments were Dirty and arranged">The Equipments were Dirty and arranged</option>
+                                            <option value="The Equipments were Dirty and not arranged">The Equipments were Dirty and not arranged</option>
+                                            
+                                
+                                        </select></td>
+
+
+                                    <td><select name="Workoutaina" id="selwork">
+                                        <!-- TODO: Populate categories -->
+                                        <option value="Barbell">Barbell</option>
+                                        <option value="Dumbell">Dumbell</option>
+                                        <option value="Ropes">Ropes</option>
+                                        <option value="Band">Band</option>
+                            
+                                    </select></td>>
+
+                                    <td><label for="appt">Select a time:</label>
+                                        <input type="time" id="appt" name="Finishtime">
+                                    </td>
+                                    <td><input type="text" id="username" name="Review" required>
+                                    </td>
+                                </tr>
+                                </table>
+                        </div>
+
+
+                        <div style="position:absolute; left: 370px; top:349px;">
+                            <input type="submit" value="Submit" class="btn btn-secondary btn-lg btn-block" width="10cm">
+
+                        </div>
+
+                        
+
+
+                      
+</form>
+                            
+
+
+</div>
+</body>
+<script>
+    
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- Sources: -->
+
+<!-- https://www.studentstutorial.com/javascript/auto-calculate-price-javascript -->
