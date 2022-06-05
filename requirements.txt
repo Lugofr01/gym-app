@@ -13,7 +13,7 @@ filelock==3.4.0
 Flask==1.1.2
 fonttools==4.31.1
 frank==1.1.0
-greenlet==1.0a1
+greenlet==1.1.2
 gunicorn==20.1.0
 hashcat==5.1.0.post3
 idna==2.10
@@ -30,7 +30,7 @@ optional-django==0.3.0
 packaging==20.9
 Pillow==9.0.1
 platformdirs==2.4.0
-playwright==0.171.1
+playwright==1.22.0
 pluggy==0.13.1
 py==1.10.0
 pycodestyle==2.8.0
