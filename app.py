@@ -8,7 +8,8 @@ app = Flask(__name__,template_folder='templates')
 import sqlite3
 
 
-path="/Users/kritibbhattarai/Desktop/gym-app/"
+# path="/Users/kritibbhattarai/Desktop/gym-ap
+path=''
 conn = sqlite3.connect(path+'database.db') 
 print ("Opened database successfully");
 # conn.execute('CREATE TABLE Gymnate (person2)')
