@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: diffiehellman
+Version: 0.13.3
+Summary: A Pythonic implementation of the Diffie-Hellman key exchange protocol
+Home-page: http://www.github.com/chrisvoncsefalvay/diffiehellman
+Author: Chris von Csefalvay
+Author-email: chris@chrisvoncsefalvay.com
+License: MIT
+Download-URL: https://github.com/chrisvoncsefalvay/diffiehellman/tarball/v0.13.3
+Description: UNKNOWN
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Software Development :: Libraries

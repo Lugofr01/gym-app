@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hashcat
+Version: 5.1.0.post3
+Summary: Python pip installer for hashcat
+Home-page: https://github.com/bannsec/hashcat
+Author: Michael Bann
+Author-email: self@bannsecurity.com
+License: MIT
+Description: # Overview
+        Little wrapper around hashcat so it can be installed via pip. Attempts to also correctly determine which binary you should run and adds `hashcat` to your path.
+        
+        For the actual hashcat, please go to: https://hashcat.net/hashcat/
+        
+        # Quickstart
+        ```bash
+        $ pip install hashcat
+        $ hashcat -h
+        ```
+        
+Keywords: hashcat
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Provides-Extra: dev

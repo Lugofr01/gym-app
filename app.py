@@ -7,8 +7,8 @@ app = Flask(__name__,template_folder='templates')
 
 
 import sqlite3
-
-conn = sqlite3.connect('/Users/franklugola/Desktop/database.db')
+path="/Users/kritibbhattarai/Desktop/gym-app/"
+conn = sqlite3.connect(path+'database.db') 
 print ("Opened database successfully");
 # conn.execute('CREATE TABLE Gymnate (person2)')
 # print ("Table created successfully");
@@ -40,7 +40,7 @@ def job():
 
 @app.route("/admin")
 def admin():
-    dbsession = sql.connect('/Users/franklugola/Desktop/database.db')        
+    dbsession = sql.connect(path+'database.db')       
     dbsession.row_factory = sql.Row
     dbexecute = dbsession.cursor()
     dbexecute.execute("select * from GymRecords")
@@ -52,7 +52,7 @@ def admin():
 
 @app.route("/admin1")
 def admin1():
-    dbsession = sql.connect('/Users/franklugola/Desktop/database.db')       
+    dbsession = sql.connect(path+'database.db')     
     dbsession.row_factory = sql.Row
     dbexecute = dbsession.cursor()
     dbexecute.execute("select * from Gymbye")
@@ -63,7 +63,7 @@ def admin1():
 
 @app.route("/admin2")
 def admin2():
-    dbsession = sql.connect('/Users/franklugola/Desktop/database.db')           
+    dbsession = sql.connect(path+'database.db')           
     dbsession.row_factory = sql.Row
     dbexecute = dbsession.cursor()
     dbexecute.execute("select * from Gymnate")
@@ -84,7 +84,7 @@ def info():
         Time =  request.form.get('Time')
         Instructor = request.form.get('Instructor')
                 
-        with sql.connect('/Users/franklugola/Desktop/database.db') as frank:
+        with sql.connect (path+'database.db') as frank:
             conn = frank.cursor()
             conn.execute("INSERT INTO GymRecords (person,date,workout,workouttype,time,instructor) VALUES (?,?,?,?,?,?)",(pur,date,workout,Type,Time,Instructor))
             frank.commit()
@@ -130,7 +130,7 @@ def info1():
         Time1 =  request.form.get('Finishtime')
         Instructor1 = request.form.get('Instructor')
             
-    with sql.connect('/home/franklugola/lugofr01/projects/database.db') as frank:
+    with sql.connect (path+'database.db') as frank:
         conn = frank.cursor()
         conn.execute("INSERT INTO Gymbye (person1,date1,workout1,workouttype1,time1,instructor1) VALUES (?,?,?,?,?,?)",(pur1,date1,workout1,Type1,Time1,Instructor1))
         frank.commit()
@@ -150,7 +150,7 @@ def info2():
 
         pur2 = request.form.get('temail')
         
-        with sql.connect('/home/franklugola/lugofr01/projectssdatabase.db') as frank:
+        with sql.connect(path+'database.db') as frank:
             conn = frank.cursor()
             conn.execute("INSERT INTO Gymnate (person2) VALUES (?)",(pur2,))
             frank.commit()
